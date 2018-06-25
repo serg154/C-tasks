@@ -1,0 +1,12 @@
+#include<iostream>
+#include <cmath>
+#include <iomanip>
+using namespace std;
+
+int main()
+
+{
+    int n, m, k;
+    cin >> n >> m >> k;
+    cout << (((n * m > k) and (((n * m % k) % m == 0) || ((n * m % k) % n == 0) || ((n * m % k) == 0))) ? "YES" : "NO");
+}
